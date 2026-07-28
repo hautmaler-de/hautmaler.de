@@ -17,3 +17,5 @@ Ein Push auf `main` startet `.github/workflows/pages.yml` und veröffentlicht di
 ## Inhaltliche Basis
 
 Adresse, Telefonnummer, Öffnungszeiten und Schwerpunkte (Realistic/Color Realism) stammen von den öffentlichen Profilen auf [Instagram](https://www.instagram.com/diehautmaler/) und [Facebook](https://www.facebook.com/diehautmaler.de/). Texte sind bewusst schlicht und ohne Marketing-Floskeln gehalten.
+
+Die Portfolio-Fotos in `img/` sind reale, abgeheilte Arbeiten aus dem öffentlichen Instagram-Feed (@diehautmaler), in Schwarz-Weiß konvertiert. Bei Gelegenheit durch Originaldateien in höherer Auflösung ersetzen, sobald die vorliegen.

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Die Hautmaler: Tattoo-Studio in Ottobrunn bei München. Realistic, Color Realism, Fine Line, Blackwork und Cover-ups – nach Termin.">
-    <meta name="theme-color" content="#15100e">
+    <meta name="theme-color" content="#0a0a0a">
     <meta property="og:title" content="Die Hautmaler – Tattoo-Studio in Ottobrunn">
     <meta property="og:description" content="Realistic, Color Realism, Fine Line, Blackwork und Cover-ups. Nach Termin, Di–Fr 11–19 Uhr.">
     <meta property="og:type" content="website">
@@ -40,8 +40,8 @@
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
-    <header class="site-header">
-      <div class="container nav-wrap">
+    <header class="site-nav">
+      <div class="container nav-row">
         <a class="brand" href="/" aria-label="Die Hautmaler Startseite">
           <span class="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 44 44" role="img">
@@ -51,13 +51,13 @@
               <path d="M20.6 24.4c0 1.6 2.8 1.6 2.8 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
             </svg>
           </span>
-          <span>die <b>hautmaler</b></span>
+          <span>Die Hautmaler</span>
         </a>
         <div class="nav-actions">
           <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+            <a href="#arbeiten">Arbeiten</a>
             <a href="#stile">Stile</a>
-            <a href="#ueber-uns">Über uns</a>
-            <a href="#ablauf">Ablauf</a>
+            <a href="#studio">Studio</a>
             <a href="#kontakt">Kontakt</a>
           </nav>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menü</button>
@@ -67,177 +67,178 @@
 
     <main id="inhalt">
       <section class="hero">
-        <div class="container hero-grid">
+        <div class="container hero-inner">
           <div class="hero-copy">
             <p class="eyebrow"><span class="eyebrow-dot"></span> Tattoo-Studio in Ottobrunn bei München</p>
-            <h1>Tattoos aus Ottobrunn.<br><em>Sauber gestochen.</em></h1>
+            <h1>Tattoos aus Ottobrunn.</h1>
             <p class="hero-lead">Realistic, Color Realism, Fine Line, Blackwork und Cover-ups. Schreib uns deine Idee, den Rest besprechen wir persönlich.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#kontakt">Idee schicken <span aria-hidden="true">↗</span></a>
-              <a class="text-link" href="#stile">Stile ansehen <span aria-hidden="true">↓</span></a>
+              <a class="button button-primary" href="#kontakt">Idee schicken</a>
+              <a class="text-link" href="#arbeiten">Arbeiten ansehen ↓</a>
             </div>
-            <div class="hero-notes" aria-label="Kurzinfos">
-              <span><i>●</i> Ottostraße 86, Ottobrunn</span>
-              <span><i>●</i> Di–Fr 11–19 Uhr</span>
-              <span><i>●</i> Sa nach Vereinbarung</span>
+            <div class="hero-facts">
+              <span>Ottostraße 86, Ottobrunn</span>
+              <span>Di–Fr 11–19 Uhr</span>
+              <span>Sa nach Vereinbarung</span>
             </div>
           </div>
-          <div class="hero-visual" aria-label="Illustration eines Tattoo-Arbeitsplatzes">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="visual-card visual-card-main">
-              <div class="window-bar"><span></span><span></span><span></span><b>Session läuft</b></div>
-              <div class="visual-screen">
-                <div class="needle-lines">
-                  <div class="needle-line"></div>
-                  <div class="needle-line short"></div>
-                  <div class="needle-line"></div>
-                </div>
-                <div class="screen-status"><i></i><span>Motiv wird gestochen</span></div>
-              </div>
-            </div>
-            <div class="visual-card visual-card-small card-hygiene"><span class="card-icon">✓</span><b>Hygiene</b><small>Einweg-Material</small></div>
-            <div class="visual-card visual-card-small card-design"><span class="card-icon">◇</span><b>Design</b><small>eigenes Motiv</small></div>
-            <div class="visual-label">keine Katalog-Ware</div>
+          <div class="hero-gallery" aria-hidden="true">
+            <figure class="polaroid polaroid-a">
+              <img src="img/work-eye.jpg" alt="">
+              <span>Realistic</span>
+            </figure>
+            <figure class="polaroid polaroid-b">
+              <img src="img/work-wolf-blackwork.jpg" alt="">
+              <span>Blackwork</span>
+            </figure>
+            <figure class="polaroid polaroid-c">
+              <img src="img/work-floral.jpg" alt="">
+              <span>Fine Line</span>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="trust-strip" aria-label="Kurzprofil">
-        <div class="container trust-grid">
-          <p class="trust-intro">Ein Studio, ein Ansprechpartner: Phil.</p>
-          <div><strong>100 % Empfehlung</strong><span>33 Bewertungen</span></div>
-          <div><strong>Realistic-Fokus</strong><span>Color &amp; Blackwork</span></div>
-          <div><strong>Nach Termin</strong><span>Di–Fr &amp; Sa n. V.</span></div>
+      <section class="fact-strip" aria-label="Kurzprofil">
+        <div class="container fact-row">
+          <span><strong>100 %</strong> Weiterempfehlung</span>
+          <span><strong>33</strong> Bewertungen</span>
+          <span>Ein Studio, <strong>ein Ansprechpartner</strong></span>
+          <span>Termine <strong>Di–Fr &amp; Sa n. V.</strong></span>
         </div>
       </section>
 
-      <section id="stile" class="section services-section">
+      <section id="arbeiten" class="section">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-head">
             <div>
-              <p class="eyebrow">Was wir stechen</p>
-              <h2>Unsere Stile.</h2>
+              <p class="eyebrow">Aus dem Studio</p>
+              <h2>Arbeiten.</h2>
             </div>
-            <p>Jedes Motiv zeichnen wir neu, passend zu Größe und Stelle – nichts von der Stange.</p>
+            <p>Ausschnitt aus fertig abgeheilten und frischen Motiven – mehr auf Instagram.</p>
           </div>
-          <div class="service-grid">
-            <article class="service-card service-card-featured">
-              <span class="service-number">01</span>
-              <div class="service-icon" aria-hidden="true">◉</div>
-              <h3>Realistic &amp; Color Realism</h3>
-              <p>Unser Schwerpunkt: Portraits, Tiere und Motive mit feinen Farbverläufen und sauberer Schattierung.</p>
-              <span class="service-tags">Portrait · Tier · Farbe · Schwarz-Grau</span>
-            </article>
-            <article class="service-card">
-              <span class="service-number">02</span>
-              <div class="service-icon" aria-hidden="true">〜</div>
-              <h3>Fine Line &amp; Lettering</h3>
-              <p>Feine Linien, Ornamente und Schriftzüge, sauber und präzise gestochen.</p>
-              <span class="service-tags">Linework · Schrift · Ornament</span>
-            </article>
-            <article class="service-card">
-              <span class="service-number">03</span>
-              <div class="service-icon" aria-hidden="true">■</div>
-              <h3>Blackwork &amp; Ornamental</h3>
-              <p>Kräftige Flächen und klare Kontraste, auch für große Motive und Sleeves.</p>
-              <span class="service-tags">Sleeve · Muster · Kontrast</span>
-            </article>
-            <article class="service-card">
-              <span class="service-number">04</span>
-              <div class="service-icon" aria-hidden="true">↻</div>
-              <h3>Cover-ups &amp; Rework</h3>
-              <p>Altes Tattoo passt nicht mehr? Wir schauen es uns an und entwerfen was Neues darüber.</p>
-              <span class="service-tags">Cover-up · Auffrischung</span>
-            </article>
-            <article class="service-card service-card-wide">
-              <span class="service-number">05</span>
-              <div class="service-icon" aria-hidden="true">◇</div>
-              <h3>Beratung &amp; individuelles Design</h3>
-              <p>Noch kein fertiges Motiv? Wir klären Platzierung, Größe und Stil und zeichnen dir was Eigenes.</p>
-              <span class="service-tags">Beratung · Design · Platzierung</span>
-            </article>
+          <div class="portfolio-grid">
+            <figure class="portfolio-item">
+              <img src="img/work-leopard.jpg" alt="Realistisches Leopardenmotiv, Unterarm, Color Realism" loading="lazy">
+              <figcaption class="portfolio-tag">Realistic · Color Realism</figcaption>
+            </figure>
+            <figure class="portfolio-item">
+              <img src="img/work-portrait.jpg" alt="Portrait-Tattoo mit Rosen, Oberarm" loading="lazy">
+              <figcaption class="portfolio-tag">Realistic · Ornamental</figcaption>
+            </figure>
+            <figure class="portfolio-item">
+              <img src="img/work-scorpion.jpg" alt="Skorpion mit Schriftzug und Datum, Brust" loading="lazy">
+              <figcaption class="portfolio-tag">Fine Line · Lettering</figcaption>
+            </figure>
+            <figure class="portfolio-item">
+              <img src="img/work-wolf-eagle.jpg" alt="Wolf- und Adlermotiv mit Schriftzug, Oberarm-Sleeve" loading="lazy">
+              <figcaption class="portfolio-tag">Realistic · Lettering</figcaption>
+            </figure>
+            <figure class="portfolio-item">
+              <img src="img/work-eye.jpg" alt="Auge mit Uhr-Motiv, Unterarm, Realistic" loading="lazy">
+              <figcaption class="portfolio-tag">Realistic · Fine Line</figcaption>
+            </figure>
+            <figure class="portfolio-item">
+              <img src="img/work-forearm.jpg" alt="Doppelportrait, Unterarm, Realistic" loading="lazy">
+              <figcaption class="portfolio-tag">Realistic</figcaption>
+            </figure>
+            <figure class="portfolio-item">
+              <img src="img/work-floral.jpg" alt="Blumenranke, Unterarm, Fine Line" loading="lazy">
+              <figcaption class="portfolio-tag">Fine Line</figcaption>
+            </figure>
+            <figure class="portfolio-item">
+              <img src="img/work-wolf-blackwork.jpg" alt="Wolfskopf, Oberarm, Blackwork" loading="lazy">
+              <figcaption class="portfolio-tag">Blackwork</figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section id="ueber-uns" class="section about-section">
-        <div class="container about-grid">
-          <div class="about-copy">
-            <p class="eyebrow">Wer sticht</p>
-            <h2>Nur <em>Phil.</em></h2>
-            <p>Die Hautmaler ist ein kleines Studio in Ottobrunn bei München. Phil macht alles selbst – von der ersten Nachricht bis zum fertigen Tattoo.</p>
-            <p>Schwerpunkt ist Realistic und Color Realism: Portraits, Tiere und Motive mit Tiefe und sauberer Schattierung. Dazu Fine Line, Lettering und Blackwork – immer neu gezeichnet für die Stelle, an der es sitzen soll.</p>
+      <section id="stile" class="section styles-section">
+        <div class="container styles-grid">
+          <div>
+            <p class="list-intro">Was wir stechen</p>
+            <ul class="text-list">
+              <li><b>Realistic &amp; Color Realism</b><span>Portraits, Tiere, Motive mit Tiefe und sauberer Schattierung – unser Schwerpunkt.</span></li>
+              <li><b>Fine Line &amp; Lettering</b><span>Feine Linien, Ornamente und Schriftzüge.</span></li>
+              <li><b>Blackwork &amp; Ornamental</b><span>Kräftige Flächen und klare Kontraste, auch für große Motive.</span></li>
+              <li><b>Cover-ups &amp; Rework</b><span>Altes Tattoo passt nicht mehr? Wir entwerfen was Neues darüber.</span></li>
+            </ul>
           </div>
-          <div class="about-creds" aria-label="Qualität und Sicherheit">
-            <p class="creds-intro">Qualität &amp; Sicherheit</p>
-            <ul class="creds-list">
-              <li>Einweg-Nadeln &amp; sterile Verfahren</li>
-              <li>Ausführliche Beratung vor jedem Termin</li>
-              <li>Eigenes Design, keine Vorlage</li>
-              <li>Pflegehinweise für die Nachsorge</li>
+          <div>
+            <p class="list-intro">Qualität &amp; Sicherheit</p>
+            <ul class="text-list">
+              <li><b>Einweg-Nadeln</b><span>Sterile Verfahren bei jedem Termin.</span></li>
+              <li><b>Ausführliche Beratung</b><span>Vor jedem Termin, ohne Zusatzkosten.</span></li>
+              <li><b>Eigenes Design</b><span>Keine Vorlage, jedes Motiv neu gezeichnet.</span></li>
+              <li><b>Pflegehinweise</b><span>Klare Anleitung für die Nachsorge.</span></li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="ablauf" class="section approach-section">
-        <div class="container approach-grid">
-          <div class="approach-copy">
-            <p class="eyebrow eyebrow-light">So läuft's</p>
-            <h2>Von der Idee<br>zum <em>Tattoo.</em></h2>
-            <p>Wir besprechen Motiv, Größe und Platzierung, bevor gestochen wird. Keine Überraschungen.</p>
-            <p>Termine: Di–Fr 11–19 Uhr, Sa nach Absprache. Kurzfristig geht meistens auch, ein fester Termin ist aber sicherer.</p>
-          </div>
-          <div class="steps" aria-label="Ablauf in drei Schritten">
-            <div class="step"><span>01</span><div><h3>Du meldest dich</h3><p>Mail, Insta oder WhatsApp – am besten gleich mit Idee, Stelle und ein paar Referenzbildern.</p></div></div>
-            <div class="step"><span>02</span><div><h3>Beratung im Studio</h3><p>Wir klären Motiv, Größe und Platzierung und machen einen Termin aus.</p></div></div>
-            <div class="step"><span>03</span><div><h3>Dein Tattoo entsteht</h3><p>In Ruhe, in deinem Tempo. Am Ende gibt's klare Pflegehinweise.</p></div></div>
+      <section id="studio" class="section about-section">
+        <div class="container about-inner">
+          <svg class="about-mark" viewBox="0 0 44 44" aria-hidden="true">
+            <path d="M22 8c-6.6 0-11 4.6-11 10.6 0 4 1.9 6.3 3.6 8.1.9.9 1.3 1.6 1.3 2.7v2.1c0 1 .8 1.5 1.6 1.2l2-.8.9 1c.5.6 1.4.6 1.9 0l.9-1 .9 1c.5.6 1.4.6 1.9 0l.9-1 2 .8c.8.3 1.6-.2 1.6-1.2v-2.1c0-1.1.4-1.8 1.3-2.7 1.7-1.8 3.6-4.1 3.6-8.1C33 12.6 28.6 8 22 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="17.7" cy="18.5" r="1.8" fill="currentColor"/>
+            <circle cx="26.3" cy="18.5" r="1.8" fill="currentColor"/>
+            <path d="M20.6 24.4c0 1.6 2.8 1.6 2.8 0" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <div class="about-copy">
+            <p class="eyebrow eyebrow-light">Wer sticht</p>
+            <h2>Nur Phil.</h2>
+            <p>Die Hautmaler ist ein kleines Studio in Ottobrunn bei München. Phil macht alles selbst – von der ersten Nachricht bis zum fertigen Tattoo.</p>
+            <p>Schwerpunkt ist Realistic und Color Realism: Portraits, Tiere und Motive mit Tiefe und sauberer Schattierung. Dazu Fine Line, Lettering und Blackwork – immer neu gezeichnet für die Stelle, an der es sitzen soll.</p>
           </div>
         </div>
       </section>
 
-      <section class="section fit-section">
-        <div class="container fit-grid">
-          <div>
-            <p class="eyebrow">Passt, wenn du …</p>
-            <h2>ein Tattoo willst,<br>das <em>bleibt.</em></h2>
+      <section id="ablauf" class="section process-section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">So läuft's</p>
+              <h2>Von der Idee zum Tattoo.</h2>
+            </div>
+            <p>Termine: Di–Fr 11–19 Uhr, Sa nach Absprache. Kurzfristig geht meistens auch.</p>
           </div>
-          <div class="fit-list">
-            <p><span>+</span> ein Motiv willst, das gemalt wirkt, nicht gestempelt</p>
-            <p><span>+</span> dir vorher Zeit für ein echtes Gespräch nimmst</p>
-            <p><span>+</span> auf Hygiene und saubere Arbeit Wert legst</p>
-            <p><span>+</span> eine Idee hast, aber noch kein fertiges Design</p>
+          <div class="process-grid">
+            <div class="process-step"><span>01</span><h3>Du meldest dich</h3><p>Mail, Insta oder WhatsApp – am besten gleich mit Idee, Stelle und ein paar Referenzbildern.</p></div>
+            <div class="process-step"><span>02</span><h3>Beratung im Studio</h3><p>Wir klären Motiv, Größe und Platzierung und machen einen Termin aus.</p></div>
+            <div class="process-step"><span>03</span><h3>Dein Tattoo entsteht</h3><p>In Ruhe, in deinem Tempo. Am Ende gibt's klare Pflegehinweise.</p></div>
           </div>
         </div>
       </section>
 
       <section id="kontakt" class="contact-section">
-        <div class="container contact-box">
-          <div>
-            <p class="eyebrow eyebrow-light">Kurz schreiben</p>
-            <h2>Was solls<br><em>werden?</em></h2>
-          </div>
+        <div class="container contact-grid">
           <div class="contact-copy">
+            <p class="eyebrow eyebrow-light">Kurz schreiben</p>
+            <h2>Was solls werden?</h2>
             <p>Schreib uns deine Idee, gewünschte Stelle und, wenn vorhanden, ein paar Referenzbilder. Wir melden uns wegen einem Termin.</p>
-            <a class="button button-light" href="mailto:phil@hautmaler.de?subject=Tattoo-Anfrage">phil@hautmaler.de <span aria-hidden="true">↗</span></a>
-            <ul class="contact-details">
-              <li>Ottostraße 86, 85521 Ottobrunn</li>
-              <li><a href="tel:+4917674135642">0176 74135642</a> (auch WhatsApp)</li>
-              <li>Di–Fr 11–19 Uhr · Sa nach Vereinbarung</li>
+            <a class="button button-primary" href="mailto:phil@hautmaler.de?subject=Tattoo-Anfrage">phil@hautmaler.de</a>
+          </div>
+          <div>
+            <ul class="contact-list">
+              <li><span>Adresse</span> Ottostraße 86, 85521 Ottobrunn</li>
+              <li><span>Telefon</span> <a href="tel:+4917674135642">0176 74135642</a> (auch WhatsApp)</li>
+              <li><span>Zeiten</span> Di–Fr 11–19 Uhr · Sa nach Vereinbarung</li>
             </ul>
-            <p class="contact-note">Instagram <a class="text-link" href="https://www.instagram.com/diehautmaler/">@diehautmaler</a> · Facebook <a class="text-link" href="https://www.facebook.com/diehautmaler.de/">Die Hautmaler</a></p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/diehautmaler/">Instagram</a>
+              <a href="https://www.facebook.com/diehautmaler.de/">Facebook</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M22 8c-6.6 0-11 4.6-11 10.6 0 4 1.9 6.3 3.6 8.1.9.9 1.3 1.6 1.3 2.7v2.1c0 1 .8 1.5 1.6 1.2l2-.8.9 1c.5.6 1.4.6 1.9 0l.9-1 .9 1c.5.6 1.4.6 1.9 0l.9-1 2 .8c.8.3 1.6-.2 1.6-1.2v-2.1c0-1.1.4-1.8 1.3-2.7 1.7-1.8 3.6-4.1 3.6-8.1C33 12.6 28.6 8 22 8z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><circle cx="17.7" cy="18.5" r="2.1" fill="currentColor"/><circle cx="26.3" cy="18.5" r="2.1" fill="currentColor"/><path d="M20.6 24.4c0 1.6 2.8 1.6 2.8 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span><span>die <b>hautmaler</b></span></div>
-        <p>Tattoo-Studio in Ottobrunn bei München.</p>
+      <div class="container footer-row">
+        <div class="footer-brand"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 8c-6.6 0-11 4.6-11 10.6 0 4 1.9 6.3 3.6 8.1.9.9 1.3 1.6 1.3 2.7v2.1c0 1 .8 1.5 1.6 1.2l2-.8.9 1c.5.6 1.4.6 1.9 0l.9-1 .9 1c.5.6 1.4.6 1.9 0l.9-1 2 .8c.8.3 1.6-.2 1.6-1.2v-2.1c0-1.1.4-1.8 1.3-2.7 1.7-1.8 3.6-4.1 3.6-8.1C33 12.6 28.6 8 22 8z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><circle cx="17.7" cy="18.5" r="2.1" fill="currentColor"/><circle cx="26.3" cy="18.5" r="2.1" fill="currentColor"/><path d="M20.6 24.4c0 1.6 2.8 1.6 2.8 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> Die Hautmaler</div>
         <div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
-        <p class="footer-copy">© <span id="year">2026</span> Die Hautmaler</p>
+        <p>© <span id="year">2026</span> Die Hautmaler</p>
       </div>
     </footer>
     <script src="script.js"></script>
