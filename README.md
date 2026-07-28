@@ -16,6 +16,6 @@ Ein Push auf `main` startet `.github/workflows/pages.yml` und veröffentlicht di
 
 ## Inhaltliche Basis
 
-Adresse, Telefonnummer, Öffnungszeiten und Schwerpunkte (Realistic/Color Realism) stammen von den öffentlichen Profilen auf [Instagram](https://www.instagram.com/diehautmaler/) und [Facebook](https://www.facebook.com/diehautmaler.de/). Texte sind bewusst schlicht und ohne Marketing-Floskeln gehalten.
+Adresse (Ottostraße 86a, 85521 Ottobrunn), Telefonnummer (0176 74135642) und Öffnungszeiten stammen aus dem öffentlichen Facebook-Auftritt und dem aktuellen Logo (Google-Business-Foto); ein älteres Logo-Asset von Facebook zeigte noch eine andere Telefonnummer (0176/27620719) – die Nummer aus dem neueren Logo und der Facebook-Info-Seite wurde übernommen, da sie an zwei Stellen übereinstimmt. Vor Veröffentlichung nochmal gegenchecken, falls sich seither was geändert hat.
 
-Die Portfolio-Fotos in `img/` sind reale, abgeheilte Arbeiten aus dem öffentlichen Instagram-Feed (@diehautmaler), in Schwarz-Weiß konvertiert. Bei Gelegenheit durch Originaldateien in höherer Auflösung ersetzen, sobald die vorliegen.
+Die Portfolio-Fotos in `img/work-*.jpg` sind reale, abgeheilte Arbeiten aus dem öffentlichen Instagram-Feed (@diehautmaler), in Originalfarbe. `img/logo.png` ist das aktuelle Studio-Logo (Google-Business-Foto), `img/phil.jpg` ein Ausschnitt aus einem Facebook-Foto (Schwarz-Weiß), `img/storefront.jpg` der Studio-Eingang (Google-Business-Foto). Alle Bilder sind nur Bildschirm-Ausschnitte in Thumbnail-Auflösung – bei Gelegenheit durch Originaldateien in höherer Auflösung ersetzen, sobald die vorliegen.

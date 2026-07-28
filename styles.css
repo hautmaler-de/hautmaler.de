@@ -28,8 +28,8 @@ h1, h2, h3 { line-height: .96; letter-spacing: -.01em; font-weight: 900; text-tr
 .site-nav { position: absolute; inset: 0 0 auto; z-index: 20; color: var(--white); }
 .nav-row { min-height: 88px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-size: 1.05rem; font-weight: 800; letter-spacing: -.01em; text-transform: uppercase; }
-.brand-mark { display: inline-grid; place-items: center; width: 32px; height: 32px; }
-.brand-mark svg { width: 100%; height: 100%; }
+.brand-mark { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; overflow: hidden; }
+.brand-mark img { width: 100%; height: 100%; object-fit: cover; }
 .main-nav { display: flex; align-items: center; gap: 30px; font-size: .74rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; }
 .main-nav a { opacity: .75; text-decoration: none; transition: opacity .2s ease; }
 .main-nav a:hover, .main-nav a:focus-visible { opacity: 1; }
@@ -38,8 +38,8 @@ h1, h2, h3 { line-height: .96; letter-spacing: -.01em; font-weight: 900; text-tr
 /* hero */
 .hero { position: relative; overflow: hidden; padding: 150px 0 70px; color: var(--white); background: var(--ink); }
 .hero-inner { display: grid; grid-template-columns: 1.05fr .95fr; gap: 50px; align-items: center; }
-.hero-copy { max-width: 560px; }
-h1 { font-size: clamp(2.9rem, 6vw, 5.2rem); margin-bottom: 22px; }
+.hero-copy { max-width: 620px; }
+h1 { font-size: clamp(3.2rem, 8vw, 6.2rem); margin-bottom: 22px; }
 .hero-lead { max-width: 480px; color: rgba(255,255,255,.72); font-size: 1.02rem; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin: 32px 0 40px; }
 .button { display: inline-flex; align-items: center; gap: 16px; min-height: 50px; padding: 0 22px; border: 1px solid var(--white); text-decoration: none; font-size: .76rem; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; transition: background .2s ease, color .2s ease; }
@@ -50,7 +50,7 @@ h1 { font-size: clamp(2.9rem, 6vw, 5.2rem); margin-bottom: 22px; }
 
 .hero-gallery { position: relative; min-height: 420px; }
 .polaroid { position: absolute; padding: 8px 8px 34px; background: var(--white); box-shadow: 0 20px 40px rgba(0,0,0,.4); }
-.polaroid img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.08); }
+.polaroid img { width: 100%; height: 100%; object-fit: cover; }
 .polaroid span { position: absolute; left: 8px; right: 8px; bottom: 10px; color: var(--ink); font-family: "DM Mono", ui-monospace, monospace; font-size: .58rem; letter-spacing: .04em; text-transform: uppercase; }
 .polaroid-a { width: 230px; height: 290px; left: 10px; top: 0; transform: rotate(-6deg); z-index: 2; }
 .polaroid-b { width: 190px; height: 240px; right: 0; top: 46px; transform: rotate(5deg); z-index: 1; }
@@ -69,7 +69,7 @@ h2 { font-size: clamp(2.3rem, 4.4vw, 3.9rem); margin-bottom: 0; }
 
 .portfolio-grid { columns: 3 240px; column-gap: 14px; }
 .portfolio-item { position: relative; break-inside: avoid; margin: 0 0 14px; overflow: hidden; }
-.portfolio-item img { width: 100%; filter: grayscale(1) contrast(1.1); transition: transform .4s ease; }
+.portfolio-item img { width: 100%; transition: transform .4s ease; }
 .portfolio-item:hover img { transform: scale(1.04); }
 .portfolio-tag { position: absolute; left: 0; right: 0; bottom: 0; padding: 20px 14px 10px; background: linear-gradient(to top, rgba(0,0,0,.82), transparent); color: var(--white); font-family: "DM Mono", ui-monospace, monospace; font-size: .6rem; letter-spacing: .04em; text-transform: uppercase; opacity: 0; transition: opacity .25s ease; }
 .portfolio-item:hover .portfolio-tag { opacity: 1; }
@@ -85,10 +85,13 @@ h2 { font-size: clamp(2.3rem, 4.4vw, 3.9rem); margin-bottom: 0; }
 
 /* about */
 .about-section { color: var(--white); background: var(--ink); }
-.about-inner { display: grid; grid-template-columns: .8fr 1fr; gap: 80px; align-items: center; }
-.about-mark { width: 130px; height: 130px; opacity: .9; }
+.about-inner { display: grid; grid-template-columns: .55fr 1fr; gap: 60px; align-items: center; margin-bottom: 70px; }
+.phil-photo { margin: 0; max-width: 260px; }
+.phil-photo img { width: 100%; border: 1px solid rgba(255,255,255,.18); }
 .about-copy p:not(.eyebrow) { max-width: 520px; color: rgba(255,255,255,.7); font-size: .92rem; }
 .about-copy p + p { margin-top: 16px; }
+.storefront-wrap { max-width: 900px; }
+.storefront-photo { width: 100%; border: 1px solid rgba(255,255,255,.18); }
 
 /* process */
 .process-section { background: var(--paper-dark); }
@@ -114,7 +117,7 @@ h2 { font-size: clamp(2.3rem, 4.4vw, 3.9rem); margin-bottom: 0; }
 .site-footer { padding: 40px 0; color: rgba(255,255,255,.55); background: var(--ink); border-top: 1px solid var(--line-light); }
 .footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: .72rem; }
 .footer-brand { display: inline-flex; align-items: center; gap: 8px; color: var(--white); font-weight: 800; text-transform: uppercase; }
-.footer-brand svg { width: 20px; height: 20px; }
+.footer-brand img { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; }
 .footer-links { display: flex; gap: 18px; }
 .footer-links a { text-underline-offset: 4px; }
 
@@ -133,6 +136,7 @@ body:has(.legal-page) .site-nav { position: absolute; background: var(--ink); }
   .container { width: min(calc(100% - 36px), var(--max)); }
   .hero-inner, .about-inner, .contact-grid, .styles-grid { grid-template-columns: 1fr; gap: 50px; }
   .hero-gallery { max-width: 420px; width: 100%; margin: 0 auto; min-height: 380px; }
+  .phil-photo { margin: 0 auto; }
   .section { padding: 80px 0; }
   .section-head { display: block; margin-bottom: 36px; }
   .section-head > p { margin-top: 20px; }
@@ -148,10 +152,11 @@ body:has(.legal-page) .site-nav { position: absolute; background: var(--ink); }
   .main-nav a { padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
   .main-nav a:last-child { border-bottom: 0; }
   .hero { padding-top: 120px; padding-bottom: 50px; }
-  h1 { font-size: clamp(2.6rem, 13vw, 3.8rem); }
+  h1 { font-size: clamp(2.3rem, 12vw, 3.4rem); }
   .hero-gallery { transform: scale(.86); transform-origin: top center; margin-bottom: -40px; }
   .portfolio-grid { columns: 2 150px; }
-  .about-mark { width: 90px; height: 90px; }
+  .phil-photo { max-width: 160px; margin: 0 auto; }
+  .about-inner { margin-bottom: 50px; }
   h2 { font-size: 2.3rem; }
   .footer-row { flex-direction: column; align-items: flex-start; }
 }
