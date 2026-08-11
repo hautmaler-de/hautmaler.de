@@ -71,7 +71,7 @@ if (document.documentElement.classList.contains('preview-locked')) {
     '<p class="eyebrow"><span class="eyebrow-dot"></span> Vorschau</p>',
     '<h2>Noch nicht live.</h2>',
     '<p>Diese Seite ist ein Entwurf. PIN eingeben.</p>',
-    '<input class="preview-gate-input" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="••" aria-label="PIN">',
+    '<input class="preview-gate-input" type="password" maxlength="8" autocomplete="off" placeholder="PIN" aria-label="PIN">',
     '<button type="submit" class="button button-primary">Weiter</button>',
     '<p class="preview-gate-error" hidden>Falsche PIN.</p>',
     '</form>'
