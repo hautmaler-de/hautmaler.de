@@ -18,51 +18,6 @@ if (menuButton && navigation) {
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
-const contactForm = document.querySelector('#contact-form');
-const contactFormStatus = document.querySelector('#contact-form-status');
-
-const formStatusText = {
-  sending: 'Wird gesendet …',
-  success: 'Danke! Nachricht ist raus, wir melden uns.',
-  error: 'Hat nicht geklappt. Bitte direkt per Mail oder WhatsApp schreiben.',
-};
-
-function setFormStatus(state) {
-  if (!contactFormStatus) return;
-  contactFormStatus.textContent = formStatusText[state];
-  contactFormStatus.dataset.state = state;
-}
-
-if (contactForm) {
-  contactForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    if (contactForm.querySelector('.contact-form-honeypot')?.checked) return;
-
-    const submitButton = contactForm.querySelector('button[type="submit"]');
-    submitButton.disabled = true;
-    setFormStatus('sending');
-
-    try {
-      const response = await fetch(contactForm.action, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(Object.fromEntries(new FormData(contactForm))),
-      });
-      const result = await response.json();
-      if (response.ok && result.success) {
-        setFormStatus('success');
-        contactForm.reset();
-      } else {
-        setFormStatus('error');
-      }
-    } catch (err) {
-      setFormStatus('error');
-    } finally {
-      submitButton.disabled = false;
-    }
-  });
-}
-
 const mapEmbed = document.querySelector('[data-map-embed]');
 if (mapEmbed) {
   mapEmbed.querySelector('.map-load-btn')?.addEventListener('click', () => {
