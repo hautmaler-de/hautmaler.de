@@ -63,6 +63,19 @@ if (contactForm) {
   });
 }
 
+const mapEmbed = document.querySelector('[data-map-embed]');
+if (mapEmbed) {
+  mapEmbed.querySelector('.map-load-btn')?.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.google.com/maps?q=Ottostra%C3%9Fe+86a,+85521+Ottobrunn&output=embed';
+    iframe.title = 'Anfahrt zu Die Hautmaler';
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    mapEmbed.innerHTML = '';
+    mapEmbed.appendChild(iframe);
+  });
+}
+
 if (document.documentElement.classList.contains('preview-locked')) {
   const gate = document.createElement('div');
   gate.className = 'preview-gate';
