@@ -73,6 +73,8 @@ h1 { font-size: clamp(3.2rem, 8vw, 6.2rem); margin-bottom: 22px; }
 .fact-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--ink-2); }
 .fact-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; padding: 22px 0; font-family: "DM Mono", ui-monospace, monospace; font-size: .68rem; letter-spacing: .03em; text-transform: uppercase; color: rgba(236, 231, 222, .6); }
 .fact-row strong { color: var(--bone); font-weight: 800; }
+.fact-row a { color: inherit; text-decoration: none; }
+.fact-row a:hover, .fact-row a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 
 /* portfolio */
 .section { padding: 110px 0; }
