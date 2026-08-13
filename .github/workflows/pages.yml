@@ -15,7 +15,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  quality:
+    uses: ./.github/workflows/quality.yml
+
   deploy:
+    needs: quality
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -23,12 +27,18 @@ jobs:
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Öffentliche Website zusammenstellen
+        run: node scripts/build-site.mjs
       - name: GitHub Pages konfigurieren
         uses: actions/configure-pages@v5
       - name: Website als Artefakt bereitstellen
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - name: Website deployen
         id: deployment
         uses: actions/deploy-pages@v4

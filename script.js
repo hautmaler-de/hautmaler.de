@@ -2,17 +2,38 @@ const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-nav');
 
 if (menuButton && navigation) {
+  const closeNavigation = (returnFocus = false) => {
+    navigation.classList.remove('is-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    if (returnFocus) menuButton.focus();
+  };
+
   menuButton.addEventListener('click', () => {
     const open = navigation.classList.toggle('is-open');
     menuButton.setAttribute('aria-expanded', String(open));
   });
 
   navigation.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      navigation.classList.remove('is-open');
-      menuButton.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', () => closeNavigation());
   });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navigation.classList.contains('is-open')) {
+      closeNavigation(true);
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (
+      navigation.classList.contains('is-open')
+      && !navigation.contains(event.target)
+      && !menuButton.contains(event.target)
+    ) {
+      closeNavigation();
+    }
+  });
+
+  window.matchMedia('(min-width: 761px)').addEventListener('change', () => closeNavigation());
 }
 
 const year = document.querySelector('#year');
@@ -25,27 +46,14 @@ if (mapEmbed) {
     iframe.src = 'https://www.google.com/maps?q=Ottostra%C3%9Fe+86a,+85521+Ottobrunn&output=embed';
     iframe.title = 'Anfahrt zu Die Hautmaler';
     iframe.loading = 'lazy';
-    iframe.referrerPolicy = 'no-referrer-when-downgrade';
-    mapEmbed.innerHTML = '';
-    mapEmbed.appendChild(iframe);
+    iframe.referrerPolicy = 'no-referrer';
+    mapEmbed.replaceChildren(iframe);
+    iframe.addEventListener('load', () => iframe.focus(), { once: true });
   });
 }
 
-if (document.documentElement.classList.contains('preview-locked')) {
-  const gate = document.createElement('div');
-  gate.className = 'preview-gate';
-  gate.innerHTML = [
-    '<form class="preview-gate-card">',
-    '<p class="eyebrow"><span class="eyebrow-dot"></span> Vorschau</p>',
-    '<h2>Noch nicht live.</h2>',
-    '<p>Diese Seite ist ein Entwurf. PIN eingeben.</p>',
-    '<input class="preview-gate-input" type="password" maxlength="8" autocomplete="off" placeholder="PIN" aria-label="PIN">',
-    '<button type="submit" class="button button-primary">Weiter</button>',
-    '<p class="preview-gate-error" hidden>Falsche PIN.</p>',
-    '</form>'
-  ].join('');
-  document.body.appendChild(gate);
-
+const gate = document.querySelector('.preview-gate');
+if (gate && document.documentElement.classList.contains('preview-locked')) {
   const form = gate.querySelector('form');
   const input = gate.querySelector('input');
   const error = gate.querySelector('.preview-gate-error');
@@ -56,12 +64,21 @@ if (document.documentElement.classList.contains('preview-locked')) {
       try { localStorage.setItem('hm_preview_ok', '1'); } catch (e) { /* Storage nicht verfügbar */ }
       document.documentElement.classList.remove('preview-locked');
       gate.remove();
+      document.querySelector('main')?.focus({ preventScroll: true });
     } else {
       error.hidden = false;
+      input.setAttribute('aria-invalid', 'true');
       input.value = '';
       input.focus();
     }
   });
 
+  input.addEventListener('input', () => {
+    error.hidden = true;
+    input.removeAttribute('aria-invalid');
+  });
+
   input.focus();
+} else {
+  gate?.remove();
 }

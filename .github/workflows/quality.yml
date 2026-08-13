@@ -1,0 +1,28 @@
+name: Website quality
+
+on:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install pinned development dependencies
+        run: npm ci
+      - name: Install Chromium for browser checks
+        run: npx playwright install --with-deps chromium
+      - name: Run technical release-readiness checks
+        run: npm run release:check

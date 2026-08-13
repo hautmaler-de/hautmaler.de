@@ -14,20 +14,32 @@ portfolio, contact, and legal information.
 - GitHub Pages uses the repository workflow on `main`, the custom domain is public,
   and GitHub reported an approved certificate with enforced HTTPS on 2026-08-13.
 - No open GitHub issues or pull requests were found on 2026-08-13.
+- The quality/readiness implementation is complete locally. The full
+  `npm run release:check` suite passed on 2026-08-13; branch push, remote CI, and a
+  draft pull request are the remaining technical handoff actions.
 
 ## Working
 
 - Responsive main, legal, privacy, and 404 pages.
-- Mobile menu and current-year behavior.
-- Google Maps is loaded only after explicit interaction.
+- Mobile menu with Escape/focus handling and current-year behavior.
+- Accessible static preview dialog on every page, including a visual lock when
+  JavaScript is unavailable. It remains presentation only, not authentication.
+- Google Maps is loaded only after explicit interaction and uses no referrer.
+- Canonical/OpenGraph metadata, structured data, preview-aware robots/sitemap files,
+  restrictive static CSP, safe external-link relations, and intrinsic image sizes.
+- Responsive AVIF/WebP derivatives for suitable existing sources, with compatible
+  fallbacks, no upscaling, and no EXIF/GPS in generated files.
+- Versioned media provenance, external release gates, verification documentation,
+  browser/axe/visual/Lighthouse tests, dependency audit, and static invariant checks.
+- Pull-request CI is reusable by Pages, and deployment stages only allowlisted public
+  files in `_site/` after quality checks pass.
 - GitHub Pages deployment and the custom domain are operational.
 
 ## Active work
 
-Quality and release-readiness work was started from the autonomous website audit
-request. Only repository/GitHub orientation and a source audit have been completed;
-no website, tooling, media, workflow, or public-deployment changes have been made.
-Continue from the detailed unchecked items in `.agent/TODO.md`.
+Quality and release-readiness implementation and local verification are complete.
+Inspect and commit the intended diff, push the branch, open a draft pull request,
+then record the PR in this handoff. Do not merge or change the public release state.
 
 ## Recently completed
 
@@ -44,23 +56,18 @@ Continue from the detailed unchecked items in `.agent/TODO.md`.
 - Address, telephone number, and hours are based on previously public sources and
   need owner confirmation before final release.
 - Several portfolio images are low-resolution social-feed crops rather than originals.
-- There is no automated HTML/link/media/readiness test suite, browser E2E suite,
-  accessibility audit, or Lighthouse budget yet.
-- Canonical metadata is absent, OpenGraph metadata is incomplete outside the home
-  page, and sitemap/preview-aware robots files do not yet exist.
-- Image elements do not declare intrinsic dimensions or responsive sources. The
-  existing `img/storefront.jpg` contains a non-location EXIF software tag; no GPS
-  metadata was found during the initial file inspection.
-- Portfolio captions are hover-only and there is no automated keyboard/focus test.
+- Rights holders, publication permission, trademark approval, and any required
+  person/customer releases are not documented for current media.
+- The existing `img/storefront.jpg` fallback retains capture-date and Picasa EXIF;
+  all generated derivatives are metadata-free and no deployed image contains GPS.
+- Pull-request CI has not run remotely yet because the branch is not pushed.
 - The preview gate is embedded browser code and does not restrict technical access.
 
 ## Next recommended tasks
 
-1. Implement the quality/readiness workstream in `.agent/TODO.md` while preserving
-   the preview gate, `noindex`, lazy map loading, and all existing operator facts.
-2. Run all static, browser, accessibility, media, link, and performance checks.
-3. Update the handoff, push the completed branch, and open a draft pull request.
-4. Obtain the external operator confirmations listed in `.agent/TODO.md`; automation
+1. Commit and push the completed branch and open a draft pull request against `main`.
+2. Confirm remote CI is green without merging or triggering a public release.
+3. Obtain the external operator confirmations listed in `.agent/TODO.md`; automation
    must continue to report these as blocked rather than completed.
 
 ## Relevant files
@@ -68,18 +75,23 @@ Continue from the detailed unchecked items in `.agent/TODO.md`.
 - `index.html`, `styles.css`, `script.js`
 - `impressum.html`, `datenschutz.html`, `404.html`
 - `img/`, `README.md`
-- `.github/workflows/pages.yml`, `CNAME`
+- `package.json`, `scripts/`, `tests/`, `media-manifest.json`, `release-gates.json`
+- `docs/`, `.github/workflows/quality.yml`, `.github/workflows/pages.yml`, `CNAME`
 
 ## Validation
 
-- `node --check script.js`
-- `git diff --check`
-- Local browser preview: `python3 -m http.server 8000`
-- Inspect representative mobile and desktop widths for visual changes.
+- `npm run release:check` passed on 2026-08-13.
+- 24 Chromium E2E/axe/visual tests passed at 320, 390, 768, and 1440 px.
+- Lighthouse passed all four pages with 1.00 performance, accessibility, and best
+  practices in the local desktop run; all budgets passed.
+- Media validation covered 38 source/derivative files; no GPS was found and generated
+  AVIF/WebP output reproduced byte-for-byte.
+- Six external HTTPS link targets returned HTTP 200 during the run.
+- npm audit reported zero vulnerabilities.
+- `git diff --check` passed.
 
 ## Last handoff
 
-2026-08-13: created `agent/hautmaler-quality-and-readiness`, verified the clean
-base, GitHub/Pages state, local instructions, existing source files, and initial
-media metadata. Paused before implementation at the user's request; all remaining
-work is recorded in `.agent/TODO.md`.
+2026-08-13: completed the quality/readiness implementation and full local validation
+while preserving operator facts, the presentation gate, `noindex`, and explicit map
+consent. Publishing the branch and opening the draft PR remain.

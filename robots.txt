@@ -1,0 +1,5 @@
+# Preview mode: crawlers may fetch pages so their noindex directives remain visible.
+User-agent: *
+Allow: /
+
+Sitemap: https://hautmaler.de/sitemap.xml

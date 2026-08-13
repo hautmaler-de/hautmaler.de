@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-08-13",
+  "policy": {
+    "permissionStatus": "pending-external",
+    "note": "Repository provenance is documented, but ownership, publication permission, and any required person releases are not recorded. No asset is automatically approved for public release."
+  },
+  "assets": [
+    {
+      "path": "apple-touch-icon.png",
+      "subject": "Studio logo touch icon",
+      "origin": "Pixel derivative of img/logo.png",
+      "ownerSource": "Rights holder not documented",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "derivativeOf": "img/logo.png",
+      "dimensions": { "width": 179, "height": 180 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": [],
+      "replacementNeeded": "Regenerate at 180 x 180 from an approved logo master"
+    },
+    {
+      "path": "favicon.ico",
+      "subject": "Studio logo browser icon",
+      "origin": "Pixel derivative of img/logo.png",
+      "ownerSource": "Rights holder not documented",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "derivativeOf": "img/logo.png",
+      "dimensions": { "width": 64, "height": 64 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": [],
+      "replacementNeeded": "Regenerate the embedded 16, 32, 48, and 64 px sizes from an approved logo master"
+    },
+    {
+      "path": "favicon.svg",
+      "subject": "Stylized skull browser icon",
+      "origin": "Vector graphic created in repository history",
+      "ownerSource": "No external source identified; brand approval not documented",
+      "permissionStatus": "pending-external",
+      "kind": "original",
+      "dimensions": { "width": 44, "height": 44 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": [],
+      "replacementNeeded": "Confirm brand approval"
+    },
+    {
+      "path": "img/logo.png",
+      "subject": "Die Hautmaler studio logo",
+      "origin": "Current logo cropped from a Google Business photo, as documented in README.md",
+      "ownerSource": "Photographer, trademark owner, and source URL not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 448, "height": 450 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": [""],
+      "replacementNeeded": "Obtain an approved vector or high-resolution logo master",
+      "responsiveDerivatives": [
+        { "path": "img/derived/logo-96.avif", "format": "avif", "width": 96, "height": 96, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/logo-96.webp", "format": "webp", "width": 96, "height": 96, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/logo-224.avif", "format": "avif", "width": 224, "height": 225, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/logo-224.webp", "format": "webp", "width": 224, "height": 225, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/logo-448.avif", "format": "avif", "width": 448, "height": 450, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/logo-448.webp", "format": "webp", "width": 448, "height": 450, "exifRemoved": true, "gpsRemoved": true }
+      ]
+    },
+    {
+      "path": "img/phil.jpg",
+      "subject": "Phil tattooing in the studio",
+      "origin": "Derivative of an existing local original, as documented in README.md",
+      "ownerSource": "Photographer and person release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 560, "height": 817 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Phil beim Tätowieren im Studio Die Hautmaler"],
+      "replacementNeeded": "Document photographer ownership and person release",
+      "responsiveDerivatives": [
+        { "path": "img/derived/phil-280.avif", "format": "avif", "width": 280, "height": 409, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/phil-280.webp", "format": "webp", "width": 280, "height": 409, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/phil-560.avif", "format": "avif", "width": 560, "height": 817, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/phil-560.webp", "format": "webp", "width": 560, "height": 817, "exifRemoved": true, "gpsRemoved": true }
+      ]
+    },
+    {
+      "path": "img/storefront.jpg",
+      "subject": "Entrance of the Die Hautmaler studio",
+      "origin": "Google Business photo, as documented in README.md",
+      "ownerSource": "Photographer and source URL not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 680, "height": 382 },
+      "metadata": { "exifRemoved": false, "gpsRemoved": true, "remaining": "Capture date and Picasa software tag" },
+      "altTexts": ["Eingang des Studios Die Hautmaler, Ottostraße 86a, Ottobrunn"],
+      "replacementNeeded": "Obtain an approved original and replace the fallback; responsive derivatives are metadata-free",
+      "responsiveDerivatives": [
+        { "path": "img/derived/storefront-340.avif", "format": "avif", "width": 340, "height": 191, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/storefront-340.webp", "format": "webp", "width": 340, "height": 191, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/storefront-680.avif", "format": "avif", "width": 680, "height": 382, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/storefront-680.webp", "format": "webp", "width": 680, "height": 382, "exifRemoved": true, "gpsRemoved": true }
+      ]
+    },
+    {
+      "path": "img/work-dagger-panther.jpg",
+      "subject": "Dagger and panther tattoo on a lower leg",
+      "origin": "Derivative of an existing local original, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 640, "height": 1479 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Dolch mit Panthermotiv, Unterschenkel, Color Realism"],
+      "replacementNeeded": "Document photographer ownership and customer release",
+      "responsiveDerivatives": [
+        { "path": "img/derived/work-dagger-panther-320.avif", "format": "avif", "width": 320, "height": 740, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-dagger-panther-320.webp", "format": "webp", "width": 320, "height": 740, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-dagger-panther-640.avif", "format": "avif", "width": 640, "height": 1479, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-dagger-panther-640.webp", "format": "webp", "width": 640, "height": 1479, "exifRemoved": true, "gpsRemoved": true }
+      ]
+    },
+    {
+      "path": "img/work-om.jpg",
+      "subject": "Om symbol tattoo on an ankle",
+      "origin": "Derivative of an existing local original, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 640, "height": 725 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Om-Symbol, Knöchel, Calligraphy"],
+      "replacementNeeded": "Document photographer ownership and customer release",
+      "responsiveDerivatives": [
+        { "path": "img/derived/work-om-320.avif", "format": "avif", "width": 320, "height": 363, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-om-320.webp", "format": "webp", "width": 320, "height": 363, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-om-640.avif", "format": "avif", "width": 640, "height": 725, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-om-640.webp", "format": "webp", "width": 640, "height": 725, "exifRemoved": true, "gpsRemoved": true }
+      ]
+    },
+    {
+      "path": "img/work-leopard.jpg",
+      "subject": "Realistic leopard tattoo on a forearm",
+      "origin": "Low-resolution screen crop from the public Instagram feed @diehautmaler, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 308, "height": 411 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Realistisches Leopardenmotiv, Unterarm, Color Realism"],
+      "replacementNeeded": "High: replace with an approved original; do not upscale"
+    },
+    {
+      "path": "img/work-portrait.jpg",
+      "subject": "Portrait tattoo with roses on an upper arm",
+      "origin": "Low-resolution screen crop from the public Instagram feed @diehautmaler, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 304, "height": 373 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Portrait-Tattoo mit Rosen, Oberarm"],
+      "replacementNeeded": "High: replace with an approved original; do not upscale"
+    },
+    {
+      "path": "img/work-scorpion.jpg",
+      "subject": "Scorpion tattoo with lettering and date on a chest",
+      "origin": "Low-resolution screen crop from the public Instagram feed @diehautmaler, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 304, "height": 411 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Skorpion mit Schriftzug und Datum, Brust"],
+      "replacementNeeded": "High: replace with an approved original; do not upscale"
+    },
+    {
+      "path": "img/work-wolf-eagle.jpg",
+      "subject": "Wolf and eagle tattoo with lettering on an upper-arm sleeve",
+      "origin": "Low-resolution screen crop from the public Instagram feed @diehautmaler, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 304, "height": 378 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Wolf- und Adlermotiv mit Schriftzug, Oberarm-Sleeve"],
+      "replacementNeeded": "High: replace with an approved original; do not upscale"
+    },
+    {
+      "path": "img/work-eye.jpg",
+      "subject": "Eye and clock tattoo on a forearm",
+      "origin": "Low-resolution screen crop from the public Instagram feed @diehautmaler, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 312, "height": 411 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Auge mit Uhr-Motiv, Unterarm, Realistic"],
+      "replacementNeeded": "High: replace with an approved original; do not upscale"
+    },
+    {
+      "path": "img/work-forearm.jpg",
+      "subject": "Double portrait tattoo on a forearm",
+      "origin": "Low-resolution screen crop from the public Instagram feed @diehautmaler, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 308, "height": 373 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Doppelportrait, Unterarm, Realistic"],
+      "replacementNeeded": "High: replace with an approved original; do not upscale"
+    },
+    {
+      "path": "img/work-floral.jpg",
+      "subject": "Floral vine tattoo on a forearm",
+      "origin": "Low-resolution screen crop from the public Instagram feed @diehautmaler, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 312, "height": 373 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Blumenranke, Unterarm, Fine Line"],
+      "replacementNeeded": "High: replace with an approved original; do not upscale"
+    },
+    {
+      "path": "img/work-wolf-blackwork.jpg",
+      "subject": "Blackwork wolf-head tattoo on an upper arm",
+      "origin": "Low-resolution screen crop from the public Instagram feed @diehautmaler, as documented in README.md",
+      "ownerSource": "Photographer and customer release not recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 308, "height": 378 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Wolfskopf, Oberarm, Blackwork"],
+      "replacementNeeded": "High: replace with an approved original; do not upscale"
+    }
+  ]
+}
