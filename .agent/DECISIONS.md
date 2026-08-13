@@ -70,3 +70,14 @@ for replacement instead of manufacturing larger files.
 
 **Consequences:** Every used media file and derivative is tracked in
 `media-manifest.json`; all permission states remain externally pending.
+
+## 2026-08-13 - Self-hosted deterministic web fonts
+
+**Decision:** Serve the intended Latin subsets of Inter and DM Mono locally alongside
+the existing Cinzel Decorative font, with license and attribution files committed.
+
+**Reason:** Layout, responsive overflow checks, and visual baselines must not depend
+on host-installed fallback fonts, and opening the site must not contact a font CDN.
+
+**Consequences:** Font changes require license review, Lighthouse-budget review, and
+intentional regeneration plus visual inspection of affected Playwright baselines.

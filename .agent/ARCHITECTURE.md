@@ -2,14 +2,16 @@
 
 ## Overview
 
-The repository is a static multi-page site hosted directly by GitHub Pages. It has
-no backend, build process, database, or server-side authentication.
+The repository is a static multi-page site hosted by GitHub Pages. It has no backend,
+database, server-side authentication, or public runtime framework. A development-only
+Node toolchain validates the source and stages an allowlisted static artifact.
 
 ## Components
 
 - `index.html`: marketing content, structured metadata, portfolio, and contact.
 - `impressum.html`, `datenschutz.html`, `404.html`: secondary pages.
 - `styles.css`: shared responsive design and preview presentation.
+- `fonts/`: locally served web fonts plus their OFL license and attribution.
 - `preview-bootstrap.js`, `script.js`: pre-paint preview state, mobile navigation,
   year, explicit map loading, and accessible gate behavior.
 - `img/`, `media-manifest.json`: source media, generated derivatives, dimensions,

@@ -35,7 +35,7 @@ than keeping a competing checklist.
   dependencies.
 - [x] Run the complete static, external-link, E2E, axe, media, responsive, visual,
   and Lighthouse validation suite; inspect `git diff --check` and the final diff.
-- [ ] After implementation is complete, commit the coherent changes, push
+- [x] After implementation is complete, commit the coherent changes, push
   `agent/hautmaler-quality-and-readiness`, and open a draft pull request. Do not merge
   or change Pages/DNS/public-release state.
 - [ ] Obtain and apply the operator's confirmed full legal name for the legal notice.
@@ -60,6 +60,8 @@ than keeping a competing checklist.
 
 ## Recently completed
 
+- [x] Confirm draft PR #1's remote `Website quality / verify` check passes without
+  merging or triggering a public release.
 - [x] Inspect the clean base branch, recent commits, repository instructions,
   GitHub Pages configuration, open issues/PRs, all current HTML/CSS/JavaScript, and
   initial image dimensions/metadata for the quality/readiness workstream.

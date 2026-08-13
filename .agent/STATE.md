@@ -9,14 +9,14 @@ portfolio, contact, and legal information.
 
 - Default branch: `main`; current quality/readiness branch:
   `agent/hautmaler-quality-and-readiness`, based on commit `0c17b5e`.
+- Draft pull request: <https://github.com/hautmaler-de/hautmaler.de/pull/1>.
 - The site is implemented as static HTML/CSS/JavaScript and currently includes a
   client-side preview gate on all pages.
 - GitHub Pages uses the repository workflow on `main`, the custom domain is public,
   and GitHub reported an approved certificate with enforced HTTPS on 2026-08-13.
-- No open GitHub issues or pull requests were found on 2026-08-13.
-- The quality/readiness implementation is complete locally. The full
-  `npm run release:check` suite passed on 2026-08-13; branch push, remote CI, and a
-  draft pull request are the remaining technical handoff actions.
+- The quality/readiness implementation is committed and pushed. The full local
+  `npm run release:check` suite and remote `Website quality / verify` run
+  `31727449740` passed on 2026-08-13 at commit `af416bb`.
 
 ## Working
 
@@ -29,6 +29,8 @@ portfolio, contact, and legal information.
   restrictive static CSP, safe external-link relations, and intrinsic image sizes.
 - Responsive AVIF/WebP derivatives for suitable existing sources, with compatible
   fallbacks, no upscaling, and no EXIF/GPS in generated files.
+- Locally served Inter, DM Mono, and Cinzel Decorative web fonts with OFL attribution;
+  browser tests no longer depend on runner-installed font metrics or font CDNs.
 - Versioned media provenance, external release gates, verification documentation,
   browser/axe/visual/Lighthouse tests, dependency audit, and static invariant checks.
 - Pull-request CI is reusable by Pages, and deployment stages only allowlisted public
@@ -37,9 +39,9 @@ portfolio, contact, and legal information.
 
 ## Active work
 
-Quality and release-readiness implementation and local verification are complete.
-Inspect and commit the intended diff, push the branch, open a draft pull request,
-then record the PR in this handoff. Do not merge or change the public release state.
+Quality and release-readiness implementation, local verification, branch push, and
+draft pull request are complete. Keep the PR unmerged and the preview boundary intact
+until the external confirmations below are supplied by an authorized person.
 
 ## Recently completed
 
@@ -60,15 +62,14 @@ then record the PR in this handoff. Do not merge or change the public release st
   person/customer releases are not documented for current media.
 - The existing `img/storefront.jpg` fallback retains capture-date and Picasa EXIF;
   all generated derivatives are metadata-free and no deployed image contains GPS.
-- Pull-request CI has not run remotely yet because the branch is not pushed.
 - The preview gate is embedded browser code and does not restrict technical access.
 
 ## Next recommended tasks
 
-1. Commit and push the completed branch and open a draft pull request against `main`.
-2. Confirm remote CI is green without merging or triggering a public release.
-3. Obtain the external operator confirmations listed in `.agent/TODO.md`; automation
+1. Obtain the external operator confirmations listed in `.agent/TODO.md`; automation
    must continue to report these as blocked rather than completed.
+2. Replace the low-resolution social-feed crops when approved originals are supplied.
+3. Review the approved release candidate on physical iOS and Android devices.
 
 ## Relevant files
 
@@ -81,6 +82,7 @@ then record the PR in this handoff. Do not merge or change the public release st
 ## Validation
 
 - `npm run release:check` passed on 2026-08-13.
+- GitHub Actions run `31727449740` passed on 2026-08-13 for commit `af416bb`.
 - 24 Chromium E2E/axe/visual tests passed at 320, 390, 768, and 1440 px.
 - Lighthouse passed all four pages with 1.00 performance, accessibility, and best
   practices in the local desktop run; all budgets passed.
@@ -92,6 +94,7 @@ then record the PR in this handoff. Do not merge or change the public release st
 
 ## Last handoff
 
-2026-08-13: completed the quality/readiness implementation and full local validation
-while preserving operator facts, the presentation gate, `noindex`, and explicit map
-consent. Publishing the branch and opening the draft PR remain.
+2026-08-13: committed and pushed the quality/readiness implementation, opened draft
+PR #1, and confirmed its remote CI is green after self-hosting the intended body and
+monospace fonts. No merge, deployment, preview-gate removal, `noindex` removal, or
+external factual approval was performed.
