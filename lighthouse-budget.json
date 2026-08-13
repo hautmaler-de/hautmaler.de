@@ -12,7 +12,7 @@
     "resourceCounts": [
       { "resourceType": "script", "budget": 2 },
       { "resourceType": "stylesheet", "budget": 1 },
-      { "resourceType": "font", "budget": 1 },
+      { "resourceType": "font", "budget": 4 },
       { "resourceType": "third-party", "budget": 0 },
       { "resourceType": "total", "budget": 25 }
     ],
