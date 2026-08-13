@@ -29,6 +29,8 @@ mode pending content/legal confirmation.
 
 ## Recently completed
 
+- Replaced the former plain agency mention with the linked footer credit `website
+  made by itmitalles.de`.
 - Removed the contact form and retained direct contact links.
 - Corrected experience and portfolio copy in recent content updates.
 - Added the former generic root handoff, now migrated to `.agent/`.
@@ -64,6 +66,5 @@ mode pending content/legal confirmation.
 
 ## Last handoff
 
-2026-08-13: migrated the generic root handoff and README checklist into `.agent/`,
-preserved all real launch tasks, and verified Pages/domain status. No business or
-legal facts were newly asserted.
+2026-08-13: added the linked `itmitalles.de` footer credit, validated the static
+page, and integrated the persistent `.agent/` context workflow from the remote.

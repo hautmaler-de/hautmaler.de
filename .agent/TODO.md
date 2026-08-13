@@ -27,6 +27,7 @@ than keeping a competing checklist.
 
 ## Recently completed
 
+- [x] Add the linked `website made by itmitalles.de` footer credit.
 - [x] Deploy the static site at `hautmaler.de` with enforced HTTPS.
 - [x] Remove the unused contact form.
 - [x] Replace the old root handoff with `.agent/` state and tasks.
