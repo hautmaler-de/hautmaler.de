@@ -9,7 +9,7 @@ portfolio, contact, and legal information.
 
 - Default branch: `main`; current quality/readiness branch:
   `agent/hautmaler-quality-and-readiness`, based on commit `0c17b5e`.
-- Draft pull request: <https://github.com/hautmaler-de/hautmaler.de/pull/1>.
+- Pull request: <https://github.com/hautmaler-de/hautmaler.de/pull/1>.
 - The site is implemented as static HTML/CSS/JavaScript and currently includes a
   client-side preview gate on all pages.
 - GitHub Pages uses the repository workflow on `main`, the custom domain is public,
@@ -17,6 +17,9 @@ portfolio, contact, and legal information.
 - The quality/readiness implementation is committed and pushed. The full local
   `npm run release:check` suite and remote `Website quality / verify` run
   `31727449740` passed on 2026-08-13 at commit `af416bb`.
+- A user-supplied 941×1672 Foo Dog full-back portfolio photo was added on 2026-08-20
+  with metadata-free JPEG, AVIF, and WebP files. The updated release suite passes and
+  the user authorized publishing the preview build with its PIN and `noindex` intact.
 
 ## Working
 
@@ -39,12 +42,15 @@ portfolio, contact, and legal information.
 
 ## Active work
 
-Quality and release-readiness implementation, local verification, branch push, and
-draft pull request are complete. Keep the PR unmerged and the preview boundary intact
-until the external confirmations below are supplied by an authorized person.
+The new full-back portfolio image and its responsive derivatives are complete and
+verified. PR #1 is the authorized publication path; the preview gate and `noindex`
+remain intentionally intact while the external final-release confirmations stay open.
 
 ## Recently completed
 
+- Added the final user-supplied 941×1672 Foo Dog full-back photo as the first portfolio
+  item, created 320 px and 640 px AVIF/WebP variants, and refreshed the four homepage
+  visual baselines.
 - Replaced the former plain agency mention with the linked footer credit `website
   made by itmitalles.de`.
 - Removed the contact form and retained direct contact links.
@@ -81,12 +87,12 @@ until the external confirmations below are supplied by an authorized person.
 
 ## Validation
 
-- `npm run release:check` passed on 2026-08-13.
+- `npm run release:check` passed on 2026-08-20 after the portfolio addition.
 - GitHub Actions run `31727449740` passed on 2026-08-13 for commit `af416bb`.
 - 24 Chromium E2E/axe/visual tests passed at 320, 390, 768, and 1440 px.
 - Lighthouse passed all four pages with 1.00 performance, accessibility, and best
   practices in the local desktop run; all budgets passed.
-- Media validation covered 38 source/derivative files; no GPS was found and generated
+- Media validation covered 43 source/derivative files; no GPS was found and generated
   AVIF/WebP output reproduced byte-for-byte.
 - Six external HTTPS link targets returned HTTP 200 during the run.
 - npm audit reported zero vulnerabilities.
@@ -94,7 +100,7 @@ until the external confirmations below are supplied by an authorized person.
 
 ## Last handoff
 
-2026-08-13: committed and pushed the quality/readiness implementation, opened draft
-PR #1, and confirmed its remote CI is green after self-hosting the intended body and
-monospace fonts. No merge, deployment, preview-gate removal, `noindex` removal, or
-external factual approval was performed.
+2026-08-20: added and fully verified the final user-supplied 941×1672 Foo Dog
+full-back portfolio photo, its responsive derivatives, media records, test count,
+and visual baselines. The user authorized publication through PR #1 while retaining
+the preview gate and `noindex`; the remaining final-release approvals stay external.

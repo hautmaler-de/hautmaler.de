@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-08-13",
+  "updated": "2026-08-20",
   "policy": {
     "permissionStatus": "pending-external",
     "note": "Repository provenance is documented, but ownership, publication permission, and any required person releases are not recorded. No asset is automatically approved for public release."
@@ -98,6 +98,24 @@
         { "path": "img/derived/storefront-340.webp", "format": "webp", "width": 340, "height": 191, "exifRemoved": true, "gpsRemoved": true },
         { "path": "img/derived/storefront-680.avif", "format": "avif", "width": 680, "height": 382, "exifRemoved": true, "gpsRemoved": true },
         { "path": "img/derived/storefront-680.webp", "format": "webp", "width": 680, "height": 382, "exifRemoved": true, "gpsRemoved": true }
+      ]
+    },
+    {
+      "path": "img/work-foo-dog-back.jpg",
+      "subject": "Blue Foo Dog full-back tattoo",
+      "origin": "User-supplied photo converted from PNG to a metadata-free JPEG for web delivery",
+      "ownerSource": "Supplied directly by the user; photographer and customer release not separately recorded",
+      "permissionStatus": "pending-external",
+      "kind": "derivative",
+      "dimensions": { "width": 941, "height": 1672 },
+      "metadata": { "exifRemoved": true, "gpsRemoved": true },
+      "altTexts": ["Großflächiges blaues Foo-Dog-Motiv, Rücken, Color Realism"],
+      "replacementNeeded": "Document photographer ownership and customer publication release; retain an approved source original",
+      "responsiveDerivatives": [
+        { "path": "img/derived/work-foo-dog-back-320.avif", "format": "avif", "width": 320, "height": 569, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-foo-dog-back-320.webp", "format": "webp", "width": 320, "height": 569, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-foo-dog-back-640.avif", "format": "avif", "width": 640, "height": 1137, "exifRemoved": true, "gpsRemoved": true },
+        { "path": "img/derived/work-foo-dog-back-640.webp", "format": "webp", "width": 640, "height": 1137, "exifRemoved": true, "gpsRemoved": true }
       ]
     },
     {

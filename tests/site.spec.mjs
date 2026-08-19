@@ -99,7 +99,7 @@ test.describe('unlocked static site', () => {
     const gallery = page.getByRole('list', { name: 'Tattoo-Arbeiten' });
     await gallery.scrollIntoViewIfNeeded();
 
-    await expect(gallery.getByRole('listitem')).toHaveCount(10);
+    await expect(gallery.getByRole('listitem')).toHaveCount(11);
     await expect(page.getByText('Realistic · Color Realism').first()).toBeVisible();
     const imageStates = await gallery.locator('img').evaluateAll((images) => images.map((image) => ({
       complete: image.complete,

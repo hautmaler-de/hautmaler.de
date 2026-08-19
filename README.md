@@ -38,12 +38,14 @@ offen.
 
 Adresse (Ottostraße 86a, 85521 Ottobrunn), Telefonnummer (0176 74135642) und Öffnungszeiten stammen aus dem öffentlichen Facebook-Auftritt und dem aktuellen Logo (Google-Business-Foto); ein älteres Logo-Asset von Facebook zeigte noch eine andere Telefonnummer (0176/27620719) – die Nummer aus dem neueren Logo und der Facebook-Info-Seite wurde übernommen, da sie an zwei Stellen übereinstimmt. Vor Veröffentlichung nochmal gegenchecken, falls sich seither was geändert hat.
 
-Die Portfolio-Fotos in `img/work-*.jpg` sind reale Arbeiten. `work-dagger-panther.jpg`
-und `work-om.jpg` sowie `img/phil.jpg` stammen laut vorhandener Dokumentation aus
-lokalen Originalfotos; EXIF/GPS wurden beim Verkleinern entfernt. Die übrigen
-`work-*.jpg` sind Bildschirm-Ausschnitte aus dem öffentlichen Instagram-Feed
-`@diehautmaler` in Thumbnail-Auflösung. `img/logo.png` ist das aktuelle Studio-Logo
-aus einem Google-Business-Foto, `img/storefront.jpg` der Studio-Eingang aus derselben
+Die Portfolio-Fotos in `img/work-*.jpg` sind reale Arbeiten. `work-foo-dog-back.jpg`
+wurde direkt für diese Aktualisierung bereitgestellt und für die Website als
+metadatenfreies JPEG aufbereitet. `work-dagger-panther.jpg`, `work-om.jpg` und
+`img/phil.jpg` stammen laut vorhandener Dokumentation aus lokalen Originalfotos;
+EXIF/GPS wurden beim Verkleinern entfernt. Die übrigen `work-*.jpg` sind
+Bildschirm-Ausschnitte aus dem öffentlichen Instagram-Feed `@diehautmaler` in
+Thumbnail-Auflösung. `img/logo.png` ist das aktuelle Studio-Logo aus einem
+Google-Business-Foto, `img/storefront.jpg` der Studio-Eingang aus derselben
 Quellkategorie.
 
 Diese Herkunftsangaben belegen keine Nutzungsrechte. Eigentümer, Veröffentlichungs-

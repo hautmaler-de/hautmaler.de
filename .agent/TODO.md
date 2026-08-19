@@ -60,6 +60,8 @@ than keeping a competing checklist.
 
 ## Recently completed
 
+- [x] Add the user-supplied Foo Dog full-back photo to the portfolio with responsive,
+  metadata-free derivatives, media records, and updated automated/visual tests.
 - [x] Confirm draft PR #1's remote `Website quality / verify` check passes without
   merging or triggering a public release.
 - [x] Inspect the clean base branch, recent commits, repository instructions,

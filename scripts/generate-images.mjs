@@ -9,6 +9,7 @@ export const imageJobs = [
   { source: 'img/logo.png', name: 'logo', widths: [96, 224, 448] },
   { source: 'img/phil.jpg', name: 'phil', widths: [280, 560] },
   { source: 'img/storefront.jpg', name: 'storefront', widths: [340, 680] },
+  { source: 'img/work-foo-dog-back.jpg', name: 'work-foo-dog-back', widths: [320, 640] },
   { source: 'img/work-dagger-panther.jpg', name: 'work-dagger-panther', widths: [320, 640] },
   { source: 'img/work-om.jpg', name: 'work-om', widths: [320, 640] }
 ];

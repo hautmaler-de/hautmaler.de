@@ -18,6 +18,7 @@ upscale a source and the generator refuses such a request.
 | `img/logo.png` | Studio logo | Google Business photo crop per README; photographer/trademark owner not recorded | Derivative | 448×450 | removed / removed | Decorative beside visible studio name | Obtain approved vector/high-resolution master |
 | `img/phil.jpg` | Phil tattooing | Derivative from existing local original per README; photographer/person release not recorded | Derivative | 560×817 | removed / removed | Phil beim Tätowieren im Studio Die Hautmaler | Document ownership and person release |
 | `img/storefront.jpg` | Studio entrance | Google Business photo per README; photographer/source URL not recorded | Derivative | 680×382 | capture date + Picasa remain / removed | Eingang des Studios Die Hautmaler, Ottostraße 86a, Ottobrunn | Obtain approved original and replace fallback |
+| `img/work-foo-dog-back.jpg` | Blue Foo Dog full-back tattoo | Supplied directly by the user and converted from PNG; photographer/customer release not separately recorded | Derivative | 941×1672 | removed / removed | Großflächiges blaues Foo-Dog-Motiv, Rücken, Color Realism | Document ownership and customer publication release; retain approved source original |
 | `img/work-dagger-panther.jpg` | Dagger and panther tattoo | Derivative from existing local original per README; photographer/customer release not recorded | Derivative | 640×1479 | removed / removed | Dolch mit Panthermotiv, Unterschenkel, Color Realism | Document ownership and customer release |
 | `img/work-om.jpg` | Om-symbol tattoo | Derivative from existing local original per README; photographer/customer release not recorded | Derivative | 640×725 | removed / removed | Om-Symbol, Knöchel, Calligraphy | Document ownership and customer release |
 | `img/work-leopard.jpg` | Leopard tattoo | Low-resolution public Instagram screen crop; photographer/customer release not recorded | Derivative | 308×411 | removed / removed | Realistisches Leopardenmotiv, Unterarm, Color Realism | High: approved original; never upscale |
@@ -39,6 +40,7 @@ fallbacks. Every output is represented in `media-manifest.json`.
 | `img/logo.png` | 96, 224, 448 | AVIF, WebP | Small header/footer variants avoid downloading the 259 kB fallback where supported. |
 | `img/phil.jpg` | 280, 560 | AVIF, WebP | Covers the current displayed size through DPR 2. |
 | `img/storefront.jpg` | 340, 680 | AVIF, WebP | No upscaling; an approved larger original is still needed for wide high-density screens. |
+| `img/work-foo-dog-back.jpg` | 320, 640 | AVIF, WebP | No upscaling. |
 | `img/work-dagger-panther.jpg` | 320, 640 | AVIF, WebP | No upscaling. |
 | `img/work-om.jpg` | 320, 640 | AVIF, WebP | No upscaling. |
 
