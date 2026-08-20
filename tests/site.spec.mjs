@@ -107,6 +107,18 @@ test.describe('unlocked static site', () => {
       width: image.getBoundingClientRect().width
     })));
     expect(imageStates.every((image) => image.complete && image.naturalWidth > 0 && image.width > 0)).toBe(true);
+
+    const gridLayout = await gallery.evaluate((list) => {
+      const cards = [...list.querySelectorAll('.portfolio-item')].map((card) => card.getBoundingClientRect());
+      const listBox = list.getBoundingClientRect();
+      const lastCard = cards.at(-1);
+      return {
+        cardHeights: cards.map((card) => Math.round(card.height)),
+        lastCardOffset: Math.abs((lastCard.left + lastCard.width / 2) - (listBox.left + listBox.width / 2))
+      };
+    });
+    expect(new Set(gridLayout.cardHeights).size).toBe(1);
+    expect(gridLayout.lastCardOffset).toBeLessThan(2);
   });
 
   test('year, legal links, 404 status, and reduced motion remain correct', async ({ page }) => {
