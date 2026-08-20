@@ -60,6 +60,8 @@ than keeping a competing checklist.
 
 ## Recently completed
 
+- [x] Replace uneven portfolio masonry with equal 3:4 cards, centered incomplete rows,
+  presentation-only cropping, and responsive layout regression coverage.
 - [x] Add the user-supplied Foo Dog full-back photo to the portfolio with responsive,
   metadata-free derivatives, media records, and updated automated/visual tests.
 - [x] Confirm draft PR #1's remote `Website quality / verify` check passes without

@@ -7,9 +7,10 @@ portfolio, contact, and legal information.
 
 ## Current status
 
-- Default branch: `main`; current quality/readiness branch:
-  `agent/hautmaler-quality-and-readiness`, based on commit `0c17b5e`.
-- Pull request: <https://github.com/hautmaler-de/hautmaler.de/pull/1>.
+- Default branch: `main`; current layout branch: `agent/portfolio-grid-layout`, based
+  on merge commit `63b6525`.
+- Pull request #1 was merged on 2026-08-20. Pages run `32315729325` passed, and the
+  deployed HTML plus the new portfolio derivative were verified on `hautmaler.de`.
 - The site is implemented as static HTML/CSS/JavaScript and currently includes a
   client-side preview gate on all pages.
 - GitHub Pages uses the repository workflow on `main`, the custom domain is public,
@@ -42,12 +43,15 @@ portfolio, contact, and legal information.
 
 ## Active work
 
-The new full-back portfolio image and its responsive derivatives are complete and
-verified. PR #1 is the authorized publication path; the preview gate and `noindex`
-remain intentionally intact while the external final-release confirmations stay open.
+The portfolio has been converted from uneven masonry columns to an equal 3:4 grid.
+Incomplete final rows are centered at desktop and mobile widths. The layout and
+updated visual baselines are verified, and the user authorized publication on
+2026-08-20 through the standard PR/CI/Pages path with the preview boundary retained.
 
 ## Recently completed
 
+- Replaced the uneven portfolio masonry with equal 3:4 cards, presentation-only image
+  cropping, centered final rows, and an automated layout assertion.
 - Added the final user-supplied 941×1672 Foo Dog full-back photo as the first portfolio
   item, created 320 px and 640 px AVIF/WebP variants, and refreshed the four homepage
   visual baselines.
@@ -87,7 +91,7 @@ remain intentionally intact while the external final-release confirmations stay 
 
 ## Validation
 
-- `npm run release:check` passed on 2026-08-20 after the portfolio addition.
+- `npm run release:check` passed on 2026-08-20 after the equal-grid layout change.
 - GitHub Actions run `31727449740` passed on 2026-08-13 for commit `af416bb`.
 - 24 Chromium E2E/axe/visual tests passed at 320, 390, 768, and 1440 px.
 - Lighthouse passed all four pages with 1.00 performance, accessibility, and best
@@ -100,7 +104,7 @@ remain intentionally intact while the external final-release confirmations stay 
 
 ## Last handoff
 
-2026-08-20: added and fully verified the final user-supplied 941×1672 Foo Dog
-full-back portfolio photo, its responsive derivatives, media records, test count,
-and visual baselines. The user authorized publication through PR #1 while retaining
-the preview gate and `noindex`; the remaining final-release approvals stay external.
+2026-08-20: created and visually reviewed an equal 3:4 portfolio grid on
+`agent/portfolio-grid-layout`, with centered incomplete rows and updated layout tests
+and baselines. The user authorized publishing this change through the CI-gated Pages
+workflow while retaining the preview PIN and `noindex`.
