@@ -7,28 +7,50 @@ portfolio, contact, and legal information.
 
 ## Current status
 
-- Default branch: `main`; inspected base commit: `95ea3b8`.
+- Default branch: `main`; current quality/readiness branch:
+  `agent/hautmaler-quality-and-readiness`, based on commit `0c17b5e`.
+- Pull request: <https://github.com/hautmaler-de/hautmaler.de/pull/1>.
 - The site is implemented as static HTML/CSS/JavaScript and currently includes a
   client-side preview gate on all pages.
-- The Pages workflow for `95ea3b8` completed successfully on 2026-08-13.
-- `https://hautmaler.de/` returned HTTP 200 on 2026-08-13; DNS resolved to GitHub
-  Pages and GitHub reported an approved certificate with enforced HTTPS.
-- No open GitHub issues were found during this handoff.
+- GitHub Pages uses the repository workflow on `main`, the custom domain is public,
+  and GitHub reported an approved certificate with enforced HTTPS on 2026-08-13.
+- The quality/readiness implementation is committed and pushed. The full local
+  `npm run release:check` suite and remote `Website quality / verify` run
+  `31727449740` passed on 2026-08-13 at commit `af416bb`.
+- A user-supplied 941×1672 Foo Dog full-back portfolio photo was added on 2026-08-20
+  with metadata-free JPEG, AVIF, and WebP files. The updated release suite passes and
+  the user authorized publishing the preview build with its PIN and `noindex` intact.
 
 ## Working
 
 - Responsive main, legal, privacy, and 404 pages.
-- Mobile menu and current-year behavior.
-- Google Maps is loaded only after explicit interaction.
+- Mobile menu with Escape/focus handling and current-year behavior.
+- Accessible static preview dialog on every page, including a visual lock when
+  JavaScript is unavailable. It remains presentation only, not authentication.
+- Google Maps is loaded only after explicit interaction and uses no referrer.
+- Canonical/OpenGraph metadata, structured data, preview-aware robots/sitemap files,
+  restrictive static CSP, safe external-link relations, and intrinsic image sizes.
+- Responsive AVIF/WebP derivatives for suitable existing sources, with compatible
+  fallbacks, no upscaling, and no EXIF/GPS in generated files.
+- Locally served Inter, DM Mono, and Cinzel Decorative web fonts with OFL attribution;
+  browser tests no longer depend on runner-installed font metrics or font CDNs.
+- Versioned media provenance, external release gates, verification documentation,
+  browser/axe/visual/Lighthouse tests, dependency audit, and static invariant checks.
+- Pull-request CI is reusable by Pages, and deployment stages only allowlisted public
+  files in `_site/` after quality checks pass.
 - GitHub Pages deployment and the custom domain are operational.
 
 ## Active work
 
-No implementation workstream is recorded. The deployed site remains in preview
-mode pending content/legal confirmation.
+The new full-back portfolio image and its responsive derivatives are complete and
+verified. PR #1 is the authorized publication path; the preview gate and `noindex`
+remain intentionally intact while the external final-release confirmations stay open.
 
 ## Recently completed
 
+- Added the final user-supplied 941×1672 Foo Dog full-back photo as the first portfolio
+  item, created 320 px and 640 px AVIF/WebP variants, and refreshed the four homepage
+  visual baselines.
 - Replaced the former plain agency mention with the linked footer credit `website
   made by itmitalles.de`.
 - Removed the contact form and retained direct contact links.
@@ -42,29 +64,43 @@ mode pending content/legal confirmation.
 - Address, telephone number, and hours are based on previously public sources and
   need owner confirmation before final release.
 - Several portfolio images are low-resolution social-feed crops rather than originals.
+- Rights holders, publication permission, trademark approval, and any required
+  person/customer releases are not documented for current media.
+- The existing `img/storefront.jpg` fallback retains capture-date and Picasa EXIF;
+  all generated derivatives are metadata-free and no deployed image contains GPS.
 - The preview gate is embedded browser code and does not restrict technical access.
 
 ## Next recommended tasks
 
-1. Obtain owner confirmation for legal identity, contact details, hours, and mail.
-2. Update legal/privacy content from that authoritative input.
-3. Remove the client-side preview gate only after public-release approval.
+1. Obtain the external operator confirmations listed in `.agent/TODO.md`; automation
+   must continue to report these as blocked rather than completed.
+2. Replace the low-resolution social-feed crops when approved originals are supplied.
+3. Review the approved release candidate on physical iOS and Android devices.
 
 ## Relevant files
 
 - `index.html`, `styles.css`, `script.js`
 - `impressum.html`, `datenschutz.html`, `404.html`
 - `img/`, `README.md`
-- `.github/workflows/pages.yml`, `CNAME`
+- `package.json`, `scripts/`, `tests/`, `media-manifest.json`, `release-gates.json`
+- `docs/`, `.github/workflows/quality.yml`, `.github/workflows/pages.yml`, `CNAME`
 
 ## Validation
 
-- `node --check script.js`
-- `git diff --check`
-- Local browser preview: `python3 -m http.server 8000`
-- Inspect representative mobile and desktop widths for visual changes.
+- `npm run release:check` passed on 2026-08-20 after the portfolio addition.
+- GitHub Actions run `31727449740` passed on 2026-08-13 for commit `af416bb`.
+- 24 Chromium E2E/axe/visual tests passed at 320, 390, 768, and 1440 px.
+- Lighthouse passed all four pages with 1.00 performance, accessibility, and best
+  practices in the local desktop run; all budgets passed.
+- Media validation covered 43 source/derivative files; no GPS was found and generated
+  AVIF/WebP output reproduced byte-for-byte.
+- Six external HTTPS link targets returned HTTP 200 during the run.
+- npm audit reported zero vulnerabilities.
+- `git diff --check` passed.
 
 ## Last handoff
 
-2026-08-13: added the linked `itmitalles.de` footer credit, validated the static
-page, and integrated the persistent `.agent/` context workflow from the remote.
+2026-08-20: added and fully verified the final user-supplied 941×1672 Foo Dog
+full-back portfolio photo, its responsive derivatives, media records, test count,
+and visual baselines. The user authorized publication through PR #1 while retaining
+the preview gate and `noindex`; the remaining final-release approvals stay external.

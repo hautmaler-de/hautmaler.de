@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "gates": [
+    { "id": "operator-full-name", "label": "Confirmed full operator name", "status": "pending-external" },
+    { "id": "mail-infrastructure", "label": "Confirmed mail infrastructure", "status": "pending-external" },
+    { "id": "address", "label": "Confirmed address", "status": "pending-external" },
+    { "id": "telephone", "label": "Confirmed telephone number", "status": "pending-external" },
+    { "id": "opening-hours", "label": "Confirmed opening hours", "status": "pending-external" },
+    { "id": "legal-review", "label": "Completed legal review", "status": "pending-external" },
+    { "id": "content-photo-approval", "label": "Approved content and photo usage", "status": "pending-external" },
+    { "id": "original-images", "label": "Approved original image files supplied", "status": "pending-external" },
+    { "id": "physical-mobile-review", "label": "Physical iOS and Android review", "status": "pending-external" },
+    { "id": "gate-removal-approval", "label": "Approval to remove the preview gate", "status": "pending-external" }
+  ]
+}
